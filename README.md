@@ -1,5 +1,8 @@
 # API Ice-and-Fire
-<img alt="IceandFire" title="#iceandfire" src='api-ice-and-fire/src/logo.png' width="150px"/>
+
+<h1 align="center">
+<img  src='https://crazyleafdesign.com/blog/wp-content/uploads/2016/10/untitled-2.jpg' width="120px"/>
+  </h1>
 
 #### Instalando dependências
 
