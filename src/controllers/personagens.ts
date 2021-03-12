@@ -1,7 +1,6 @@
 import axios from 'axios';
-import fs from 'fs';
 
-import { Request, response, Response } from "express";
+import { Request, Response } from "express";
 
 class PersonagensController {
     public aryastark(req: Request, res: Response) {
@@ -83,23 +82,17 @@ class PersonagensController {
             throw new Error(error)
         })
 
-
     }
     public booksimage(req: Request, res: Response) {
-       axios.get('https://covers.openlibrary.org/b/id/9269962-L.jpg',{responseType: 'arraybuffer'}
+        axios.get('https://covers.openlibrary.org/b/id/9269962-L.jpg', { responseType: 'arraybuffer' }
         ).then((response) => {
 
-            
-            
-            res.send(Buffer.from(response.data,'binary').toString('base64'))
+            res.send(Buffer.from(response.data, 'binary').toString('base64'))
 
         }).catch((error) => {
             throw new Error(error)
         })
-
-
     }
 }
-
 
 export default new PersonagensController();

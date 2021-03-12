@@ -1,7 +1,6 @@
 import { Router } from 'express';
 
 import PersonagensController from '../controllers/personagens'
-import BooksController from '../controllers/personagens'
 
 const AppRoutes = Router()
 
@@ -23,11 +22,9 @@ AppRoutes.route('/will')
   .get(PersonagensController.will)
 AppRoutes.route('/daenerystargaryen')
   .get(PersonagensController.daenerys)
-  AppRoutes.route('/daenerysbooks')
+AppRoutes.route('/daenerysbooks')
   .get(PersonagensController.daenerysbooks)
-  AppRoutes.route('/booksimage')
+AppRoutes.route('/booksimage')
   .get(PersonagensController.booksimage)
- 
-
 
 export default AppRoutes
